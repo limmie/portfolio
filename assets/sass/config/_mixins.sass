@@ -3,3 +3,23 @@
   grid-template-columns: $columns
   grid-template-rows: $rows
   gap: $gap
+
+@mixin flex($direction, $justify-content, $align-items)
+  display: flex
+  flex-direction: $direction
+  justify-content: $justify-content
+  align-items: $align-items
+
+@mixin fitImage($position, $fit)
+  object-position: $position
+  object-fit: $fit
+  width: 100%
+  height: 100%
+
+@mixin defaultTransition()
+  transition: all 0.2s
+
+@mixin removeDefault()
+  background: none
+  border: none
+  outline: none
