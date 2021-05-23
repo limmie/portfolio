@@ -1,0 +1,155 @@
+#services-section
+  padding: 0
+
+#services
+  @include grid(repeat(3, 1fr), auto, 6rem 1rem)
+
+#services-section-title, #services
+  padding: 2.5rem
+
+.service
+  box-shadow: 0 0 56px -8px rgb(0 0 0 / 17%)
+  padding: 2rem 2rem 3.5rem 2rem
+  text-align: center
+  border-bottom: 2px solid $primaryColor
+  .service-octagon-icon
+    font-size: 30px
+    @include flex(row, center, center)
+    margin: 0 auto
+    background-color: $primaryColor
+    color: $whiteColor
+    bottom: 60px
+    position: relative
+    width: 100px
+    height: 50px
+
+    &::before, &::after
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+
+    &::before
+      top: -30px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 0 50px 30px 50px
+      border-color: transparent transparent $primaryColor transparent
+
+    &::after
+      bottom: -30px
+      width: 0
+      height: 0
+      border-style: solid
+      border-width: 30px 50px 0 50px
+      border-color: $primaryColor transparent transparent transparent
+
+  h3
+    font-family: Raleway, sans-serif
+    margin-bottom: 1.2rem
+    text-transform: uppercase
+
+  p
+    font-size: 15px
+    line-height: 1.8
+
+
+
+.service-blue
+  @extend .service
+  $currentColor: $primaryColor
+  border-color: $currentColor
+  .service-octagon-icon
+    background-color: $currentColor
+    &::before
+      border-color: transparent transparent $currentColor transparent
+    &::after
+      border-color: $currentColor transparent transparent transparent
+
+
+.service-red
+  @extend .service
+  $currentColor: $redColor
+  border-color: $currentColor
+  .service-octagon-icon
+    background-color: $currentColor
+    &::before
+      border-color: transparent transparent $currentColor transparent
+    &::after
+      border-color: $currentColor transparent transparent transparent
+
+
+.service-yellow
+  @extend .service
+  $currentColor: $yellowColor
+  border-color: $currentColor
+  .service-octagon-icon
+    background-color: $currentColor
+    &::before
+      border-color: transparent transparent $currentColor transparent
+    &::after
+      border-color: $currentColor transparent transparent transparent
+
+
+.service-purple
+  @extend .service
+  $currentColor: $purpleColor
+  border-color: $currentColor
+  .service-octagon-icon
+    background-color: $currentColor
+    &::before
+      border-color: transparent transparent $currentColor transparent
+    &::after
+      border-color: $currentColor transparent transparent transparent
+
+
+.service-aloe
+  @extend .service
+  $currentColor: $aloeColor
+  border-color: $currentColor
+  .service-octagon-icon
+    background-color: $currentColor
+    &::before
+      border-color: transparent transparent $currentColor transparent
+    &::after
+      border-color: $currentColor transparent transparent transparent
+
+
+.service-darkblue
+  @extend .service
+  $currentColor: $darkBlueColor
+  border-color: $currentColor
+  .service-octagon-icon
+    background-color: $currentColor
+    &::before
+      border-color: transparent transparent $currentColor transparent
+    &::after
+      border-color: $currentColor transparent transparent transparent
+
+#services-stats
+  background-image: url("/images/backgrounds/welcome/services-stats-background.jpg")
+  background-size: cover
+  background-attachment: fixed
+  background-position: center center
+
+  margin-top: 3rem
+  padding: 3rem
+
+  text-align: center
+  @include grid(repeat(4, 1fr), auto, 1rem)
+
+.services-stats-item
+  span, p
+    color: $whiteColor
+
+  span
+    display: block
+    font-size: 40px
+    font-weight: bold
+    margin-bottom: 2rem
+
+  p
+    text-transform: uppercase
+    font-size: 14px
+    letter-spacing: 5px
