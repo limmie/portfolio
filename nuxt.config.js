@@ -29,7 +29,27 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: [
+    [
+      "@nuxtjs/fontawesome",
+      {
+        component: "fa",
+        suffix: true,
+        icons: {
+          solid: [
+            "faBriefcase",
+            "faCode",
+            "faLayerGroup",
+            "faDatabase",
+            "faServer",
+            "faHandshake",
+            "faLightbulb",
+            "faComments",
+          ],
+        },
+      },
+    ],
+  ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -37,6 +57,30 @@ export default {
     "@nuxtjs/axios",
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
+
+    [
+      "nuxt-i18n",
+      {
+        strategy: "prefix",
+        locales: [
+          {
+            code: "en",
+            file: "en-US.js",
+          },
+          {
+            code: "ru",
+            file: "ru-RU.js",
+          },
+          {
+            code: "tm",
+            file: "tm-TM.js",
+          },
+        ],
+        lazy: true,
+        langDir: "lang/",
+        defaultLocale: "en",
+      },
+    ],
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
