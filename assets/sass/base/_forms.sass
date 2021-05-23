@@ -1,0 +1,40 @@
+button, input, select, textarea
+  outline: none
+  @include removeDefault
+
+.default-button
+  padding: 10px 15px
+  cursor: pointer
+  text-transform: uppercase
+  letter-spacing: 2px
+  @include defaultTransition
+
+  &:hover
+    @include defaultTransition
+
+.transition-from-left-button
+  @extend .default-button
+  position: relative
+  overflow: hidden
+
+  span
+    position: relative
+    z-index: 2
+    @include defaultTransition
+
+  &::before
+    content: ""
+    position: absolute
+    width: 100%
+    height: 100%
+    left: -100%
+    top: 0
+    @include defaultTransition
+
+  &:hover
+    span
+      @include defaultTransition
+
+    &::before
+      left: 0
+      @include defaultTransition
