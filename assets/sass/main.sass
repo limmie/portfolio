@@ -1,9 +1,22 @@
 /* CONFIG */
+@import './config/variables'
 @import './config/mixins'
 @import './config/fonts'
 
+/* BASE */
+@import './base/forms'
+
 /* LAYOUTS */
 @import './layouts/default'
+
+/* COMPONENTS */
+@import './components/sidebar'
+
+/* PAGES */
+@import './pages/welcome/welcome'
+@import './pages/welcome/sections/landing-section'
+@import './pages/welcome/sections/about-section'
+@import './pages/welcome/sections/services-section'
 
 *
   margin: 0
@@ -11,8 +24,18 @@
   box-sizing: border-box
 
 html
-  font-family: Playfair, Arial, sans-serif
+  scroll-behavior: smooth
+  font-family: Raleway, Arial, sans-serif
+
+h1, h2, h3, h4, h5, h6
+  font-family: Playfair, "Times New Roman", sans-serif
+
+p, span, a
+  color: $textColor
+
+a
+  text-decoration: none
 
 .container
-  max-width: 1170px
+  max-width: 1200px
   margin: 0 auto
