@@ -1,0 +1,71 @@
+#about-text
+  font-size: 15px
+  line-height: 1.8
+
+#about-service-blocks
+  @include grid(repeat(4, 1fr), auto, 1rem)
+  margin: 2rem 0
+
+.about-service-block
+  height: 130px
+  box-shadow: 0 0 56px -8px rgb(0 0 0 / 17%)
+  padding: 1rem
+  @include flex(column, space-around, unset)
+  border-bottom: 2px solid $primaryColor
+
+  svg.about-service-block-icon
+    color: $primaryColor
+    font-size: 25px
+
+  p.about-service-block-name
+    font-weight: bold
+    font-size: 16px
+
+
+.about-service-block-blue
+  @extend .about-service-block
+
+
+.about-service-block-red
+  @extend .about-service-block
+  border-color: $redColor
+
+  svg.about-service-block-icon
+    color: $redColor
+
+
+.about-service-block-yellow
+  @extend .about-service-block
+  border-color: $yellowColor
+
+  svg.about-service-block-icon
+    color: $yellowColor
+
+
+.about-service-block-purple
+  @extend .about-service-block
+  border-color: $purpleColor
+
+  svg.about-service-block-icon
+    color: $purpleColor
+
+#about-banner
+  background-color: $yellowColor
+  padding: 2rem
+
+#about-banner-text
+  margin-bottom: 1rem
+  h2
+    line-height: 1.5
+
+#about-banner-button
+  border: 1px solid $blackColor
+  span
+    color: $blackColor
+
+  &:hover
+    span
+      color: $yellowColor
+
+  &::before
+    background-color: $blackColor
