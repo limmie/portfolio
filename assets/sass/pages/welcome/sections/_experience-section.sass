@@ -1,0 +1,65 @@
+#experience-timelines-wrapper
+  padding-left: 60px
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    height: 100%
+    width: 5px
+    left: 0
+    background-color: $sidebarBackgroundColor
+
+.experience-timeline
+  position: relative
+  margin-bottom: 1rem
+
+$timelineIconSize: 30px
+.experience-timeline-icon
+  @include flex(row, center, center)
+  position: absolute
+  padding: 0.6rem
+  border-radius: 50%
+  color: $whiteColor
+  width: $timelineIconSize
+  height: $timelineIconSize
+  left: -4.5rem
+  top: 8px
+  box-shadow: 0 0 0 5px #f2f3f7
+
+.experience-timeline-icon-blue
+  @extend .experience-timeline-icon
+  background-color: $primaryColor
+
+.experience-timeline-icon-red
+  @extend .experience-timeline-icon
+  background-color: $redColor
+
+.experience-timeline-icon-purple
+  @extend .experience-timeline-icon
+  background-color: $purpleColor
+
+.experience-timeline-block
+  position: relative
+  background-color: $sidebarBackgroundColor
+  border-radius: 4px
+  padding: 1.5rem
+  $triangleSize: 12px
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: $triangleSize $triangleSize $triangleSize 0
+    border-color: transparent $sidebarBackgroundColor transparent transparent
+    left: 0
+    top: 10px
+    margin-left: -$triangleSize
+
+.experience-timeline-title
+  @include flex(row, space-between, end)
+  margin-bottom: 1rem
+  h2
+    font-size: 20px
+    font-family: 'Raleway', sans-serif
