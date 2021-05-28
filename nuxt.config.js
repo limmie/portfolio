@@ -45,6 +45,8 @@ export default {
             "faHandshake",
             "faLightbulb",
             "faComments",
+            "faShareAlt",
+            "faEye",
           ],
         },
       },
