@@ -1,15 +1,22 @@
 #works-nav
   @include flex(row, flex-start, center)
-  margin-bottom: 2rem
+  flex-wrap: wrap
+  margin-bottom: 1rem
 
 .works-nav-item
   cursor: pointer
   margin-right: 1rem
+  margin-bottom: 1rem
+  @include defaultTransition
+
   &:hover
     color: $primaryColor
+    @include defaultTransition
+
 
 #work-blocks
   @include grid(1fr 1fr, auto, 1rem)
+  margin-bottom: 1rem
 
 
 .work-block
@@ -24,17 +31,19 @@
 
 .work-block-hover-info
   @include flex(column, space-between, unset)
+  @include defaultTransition
   padding: 1rem 1.5rem
   color: $whiteColor
   background-color: rgba($primaryColor, 0.7)
+  position: absolute
   top: 0
   left: 0
   height: 100%
   width: 100%
-  position: absolute
   opacity: 0
   &:hover
     opacity: 1
+    @include defaultTransition
 
 .work-block-hover-info-title
   h3
@@ -55,3 +64,7 @@
   @include flex(row, flex-start, center)
   svg
     margin: 0 0.2rem
+
+@media (max-width: 600px)
+  #work-blocks
+    grid-template-columns: 1fr

@@ -1,5 +1,5 @@
 #skills
-  margin-top: 1rem
+  margin-top: 2rem
   @include grid(1fr 1fr, auto, 2rem 1rem)
 
 .skill-progress-name
@@ -84,3 +84,8 @@
   background-color: $currentColor
   &::after
     background-color: $currentColor
+
+
+@media (max-width: 600px)
+  #skills
+    grid-template-columns: 1fr
