@@ -128,18 +128,26 @@
       border-color: $currentColor transparent transparent transparent
 
 #services-stats
-  background-image: url("/images/backgrounds/welcome/services-stats-background.jpg")
+  @include grid(repeat(4, 1fr), auto, 1rem)
+  background-image: url("/images/backgrounds/welcome/services-stats-background.webp")
   background-size: cover
   background-attachment: fixed
   background-position: center center
-
   margin-top: 3rem
   padding: 3rem
-
   text-align: center
-  @include grid(repeat(4, 1fr), auto, 1rem)
+  position: relative
+
+  &::before
+    content: ""
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.5)
 
 .services-stats-item
+  z-index: 1
+
   span, p
     color: $whiteColor
 
@@ -153,3 +161,20 @@
     text-transform: uppercase
     font-size: 14px
     letter-spacing: 5px
+
+
+@media (max-width: 1000px)
+  #services
+    grid-template-columns: 1fr 1fr
+
+@media (max-width: 600px)
+  #services-stats
+    grid-template-columns: 1fr 1fr
+
+@media (max-width: 550px)
+  #services
+    grid-template-columns: 1fr
+
+@media (max-width: 400px)
+  #services-stats
+    grid-template-columns: 1fr

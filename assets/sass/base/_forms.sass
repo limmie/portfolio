@@ -1,6 +1,18 @@
 button, input, select, textarea
   outline: none
+  font-family: Raleway, sans-serif
   @include removeDefault
+
+textarea
+  resize: vertical
+  max-height: 300px
+
+button
+  cursor: pointer
+  @include defaultTransition
+  &:hover
+    opacity: 0.7
+    @include defaultTransition
 
 .default-button
   padding: 10px 15px

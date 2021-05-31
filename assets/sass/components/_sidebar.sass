@@ -1,12 +1,12 @@
 aside#sidebar
-  overflow: hidden
-  position: relative
+  z-index: 5
+  position: fixed
 
 #sidebar-wrapper
   padding: 2rem 1.5rem
-  position: fixed
   height: 100vh
   width: 300px
+  overflow: hidden
   background-color: $sidebarBackgroundColor
 
 #sidebar-freelancer-avatar
@@ -41,6 +41,13 @@ aside#sidebar
       color: $blackColor
       @include defaultTransition
 
+#sidebar-nav-language-selector
+  cursor: pointer
+  @include flex(row, unset, center)
+  img
+    width: 20px
+    margin-left: 0.2rem
+
 
 #sidebar-footer
   text-align: center
@@ -49,3 +56,8 @@ aside#sidebar
     font-size: 12px
     a
       color: $primaryColor
+
+
+@media (max-width: 800px)
+  aside#sidebar
+    box-shadow: -3px 0 7px 0 #555

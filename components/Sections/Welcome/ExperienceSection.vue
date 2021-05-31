@@ -20,7 +20,7 @@
             <span>{{ experience.timeline }}</span>
           </div>
           <div class="experience-timeline-text">
-            <p class="welcome-section-text">{{ experience.text }}</p>
+            <p class="welcome-section-text" v-html="experience.text"></p>
           </div>
         </div>
       </div>

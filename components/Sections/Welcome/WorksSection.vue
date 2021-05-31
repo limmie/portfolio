@@ -4,7 +4,7 @@
 
     <div id="works-wrapper">
       <div id="works-nav">
-        <div class="works-nav-item" v-for="(item, index) in nav">
+        <div class="works-nav-item" v-for="(item, index) in nav" :key="index">
           {{ item.name }}
         </div>
       </div>
@@ -32,6 +32,11 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="welcome-load-more-button" id="works-load-more-button">
+        {{ $t("loadMore") }}
+        <fa-icon :icon="['fas', 'redo']" />
       </div>
     </div>
   </section>

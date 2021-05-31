@@ -58,8 +58,13 @@ $timelineIconSize: 30px
     margin-left: -$triangleSize
 
 .experience-timeline-title
-  @include flex(row, space-between, end)
+  @include flex(row, space-between, flex-end)
+  flex-wrap: wrap
   margin-bottom: 1rem
   h2
     font-size: 20px
     font-family: 'Raleway', sans-serif
+
+.experience-timeline-text
+  a
+    color: $primaryColor

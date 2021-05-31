@@ -6,7 +6,7 @@
     />
 
     <div id="skills-section-text">
-      <p class="welcome-section-text">{{ $t("sections.skills.text") }}</p>
+      <p class="welcome-section-text" v-html="$t('sections.skills.text')"></p>
     </div>
 
     <div id="skills">

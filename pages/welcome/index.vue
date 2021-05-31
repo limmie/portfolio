@@ -6,6 +6,7 @@
     <SkillsSection />
     <ExperienceSection />
     <WorksSection />
+    <ContactsSection />
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import ServicesSection from "../../components/Sections/Welcome/ServicesSection";
 import SkillsSection from "../../components/Sections/Welcome/SkillsSection";
 import ExperienceSection from "../../components/Sections/Welcome/ExperienceSection";
 import WorksSection from "../../components/Sections/Welcome/WorksSection";
+import ContactsSection from "../../components/Sections/Welcome/ContactsSection";
 
 export default {
   components: {
@@ -25,6 +27,7 @@ export default {
     SkillsSection,
     ExperienceSection,
     WorksSection,
+    ContactsSection,
   },
 };
 </script>
