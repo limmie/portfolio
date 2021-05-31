@@ -10,7 +10,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Limmie Blaine - Full Stack Web Developer",
+    title: "Selim - Full Stack Web Developer",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -23,7 +23,7 @@ export default {
   css: [{ src: "~/assets/sass/main.sass" }],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: [{ src: "~/plugins/v-click-outside" }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -47,6 +47,11 @@ export default {
             "faComments",
             "faShareAlt",
             "faEye",
+            "faRedo",
+            "faAt",
+            "faStreetView",
+            "faPhone",
+            "faSuitcase",
           ],
         },
       },
@@ -73,10 +78,10 @@ export default {
             code: "ru",
             file: "ru-RU.js",
           },
-          {
-            code: "tm",
-            file: "tm-TM.js",
-          },
+          // {
+          //   code: "tm",
+          //   file: "tm-TM.js",
+          // },
         ],
         lazy: true,
         langDir: "lang/",
