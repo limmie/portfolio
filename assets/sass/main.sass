@@ -5,12 +5,14 @@
 
 /* BASE */
 @import './base/forms'
+@import './base/transitions'
 
 /* LAYOUTS */
 @import './layouts/default'
 
 /* COMPONENTS */
 @import './components/sidebar'
+@import './components/hamburger'
 
 /* PAGES */
 @import './pages/welcome/welcome'
@@ -20,15 +22,27 @@
 @import './pages/welcome/sections/skills-section'
 @import './pages/welcome/sections/experience-section'
 @import './pages/welcome/sections/works-section'
+@import './pages/welcome/sections/contacts-section'
+
+/* EXTERNAL PACKAGES */
+@import 'hamburgers/dist/hamburgers.min.css'
 
 *
   margin: 0
   padding: 0
   box-sizing: border-box
+  outline: none
 
 html
   scroll-behavior: smooth
   font-family: Raleway, Arial, sans-serif
+
+body
+  &.static
+    overflow: hidden
+
+main
+  margin-left: 300px
 
 h1, h2, h3, h4, h5, h6
   font-family: Playfair, "Times New Roman", sans-serif
@@ -42,3 +56,7 @@ a
 .container
   max-width: 1200px
   margin: 0 auto
+
+@media (max-width: 800px)
+  main
+    margin-left: 0
