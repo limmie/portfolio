@@ -144,10 +144,10 @@ export default {
 
       items: [
         {
-          name: "Website 1",
-          types: ["Frontend", "Backend"],
+          name: "Ravel | Travelling Website",
+          types: ["Frontend", "SEO", "Layout"],
           image: "/images/sections/welcome/works/work-1.webp",
-          views: 100,
+          views: 12,
         },
         {
           name: "Website 1",

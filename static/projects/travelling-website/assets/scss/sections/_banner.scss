@@ -1,0 +1,29 @@
+#banner {
+  @include flex(row, space-between, center);
+  background: linear-gradient(90deg, #a6f2f2 0%, #ddf181 100%);
+  border-radius: 5px;
+}
+
+#banner-content {
+  padding: 130px;
+}
+
+#banner-title {
+  font-size: 48px;
+}
+
+#banner-download-buttons {
+  @include flex(row, flex-start, center);
+  gap: 1rem;
+  margin-top: 3rem;
+}
+
+.banner-download-button {
+  width: 200px;
+  height: 60px;
+
+  img {
+    @include fitImage(center, cover);
+    border-radius: 10px;
+  }
+}

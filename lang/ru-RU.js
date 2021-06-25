@@ -24,7 +24,7 @@ export default {
 
   sections: {
     landing: {
-      title: "<h1>Привет, </h1><h1>ЯСелим</h1>",
+      title: "<h1>Привет, </h1><h1>Я Селим</h1>",
       description:
         "<p> 100% эффективные веб-сайтов, написанные на </p> <p> Vue (Nuxt) и node.js (Express) </p>",
     },
@@ -143,10 +143,11 @@ export default {
 
       items: [
         {
-          name: "Website 1",
-          types: ["Frontend", "Backend"],
+          name: "Ravel | Сайт для путешествий",
+          types: ["Frontend", "SEO", "Верстка"],
           image: "/images/sections/welcome/works/work-1.webp",
-          views: 100,
+          link: "/projects/travelling-website/index.html",
+          views: 12,
         },
         {
           name: "Website 1",

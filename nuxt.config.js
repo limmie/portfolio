@@ -65,6 +65,8 @@ export default {
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
 
+    "nuxt-seo",
+
     [
       "nuxt-i18n",
       {
@@ -78,10 +80,6 @@ export default {
             code: "ru",
             file: "ru-RU.js",
           },
-          // {
-          //   code: "tm",
-          //   file: "tm-TM.js",
-          // },
         ],
         lazy: true,
         langDir: "lang/",
@@ -89,6 +87,40 @@ export default {
       },
     ],
   ],
+
+  seo: {
+    baseUrl: "https://selim.netlify.app",
+    name: "Selim Developer",
+    title: "Selim Ataballyev Full Stack Web Developer",
+    templateTitle: "%name% - %title%",
+    description: "Selim Ataballyev Full Stack Web Developer",
+    keywords: [
+      "developer",
+      "selim",
+      "ataballyev",
+      "Selim",
+      "Ataballyev",
+      "Developer",
+      "Full-stack web developer",
+      "node.js developer",
+      "vue developer",
+      "nuxt developer",
+    ],
+    image: "%baseUrl%/images/avatars/sidebar/sidebar-avatar.webp",
+    author: [
+      "Selim Ataballyev",
+      "limmiecrazzy@gmail.com",
+      "selimdev00@gmail.com",
+      "selim.netlify.com",
+      "selimdev.herokuapp.com",
+    ],
+
+    url: "https://selim.netlify.app",
+
+    openGraph: {
+      title: "Selim Ataballyev",
+    },
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

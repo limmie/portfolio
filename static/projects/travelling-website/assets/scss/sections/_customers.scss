@@ -1,0 +1,164 @@
+#customers-section {
+  position: relative;
+}
+
+#customers-title {
+  font-size: 48px;
+  text-align: center;
+  @include container(690px);
+  margin-bottom: 100px;
+}
+
+.customer-particle {
+  position: absolute;
+
+  img {
+    border-radius: 50%;
+    @include fitImage(center, cover);
+    box-shadow: 0px 10px 30px #f0cbd2;
+    border-width: 6px;
+    border-style: solid;
+  }
+
+  &:nth-child(1) {
+    width: 50px;
+    top: 25rem;
+    left: 15rem;
+    img {
+      border-color: $purpleColor;
+    }
+  }
+
+  &:nth-child(2) {
+    width: 75px;
+    top: 30rem;
+    left: 2rem;
+    img {
+      border-color: $yellowColor;
+    }
+  }
+
+  &:nth-child(3) {
+    width: 100px;
+    top: 35rem;
+    left: 20rem;
+    img {
+      border-color: $redColor;
+    }
+  }
+
+  &:nth-child(4) {
+    width: 100px;
+    top: 45rem;
+    left: 4rem;
+    img {
+      border-color: $darkBlueColor;
+    }
+  }
+
+  &:nth-child(5) {
+    width: 100px;
+    top: 25rem;
+    right: 15rem;
+    img {
+      border-color: $blueColor;
+    }
+  }
+
+  &:nth-child(6) {
+    width: 50px;
+    top: 40rem;
+    right: 25rem;
+    img {
+      border-color: $yellowColor;
+    }
+  }
+
+  &:nth-child(7) {
+    width: 75px;
+    top: 50rem;
+    right: 10rem;
+    img {
+      border-color: $greenColor;
+    }
+  }
+}
+
+#customers-slider {
+  @include container(690px);
+  box-shadow: 0px 20px 30px rgba(227, 202, 202, 0.3);
+  border-top: 10px solid $primaryColor;
+  height: 600px;
+
+  padding: 0 5rem 3rem 5rem;
+  @include flex(column, space-between, center);
+}
+
+.customer {
+  @include flex(row, center, center);
+  gap: 1rem;
+  margin: 70px 0;
+}
+
+.customer-info {
+  h1 {
+    font-size: 24px;
+  }
+  p {
+    color: $primaryColor;
+    @include OpenSans;
+    font-weight: bold;
+  }
+}
+
+.customer-image {
+  width: 80px;
+  height: 80px;
+  img {
+    @include fitImage(center, cover);
+    border-radius: 50%;
+  }
+}
+
+.customer-message {
+  font-size: 24px;
+  @include OpenSans;
+  color: $grayTextColor;
+  line-height: 36px;
+}
+
+#customers-slider-pagination {
+  margin-top: 4rem;
+  @include flex(row, center, center);
+  gap: 1rem;
+}
+
+.customers-slider-pagination-item {
+  width: 22px;
+  height: 22px;
+  @include flex(row, center, center);
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+  }
+  &::before {
+    width: 10px;
+    height: 10px;
+    background-color: $grayColor;
+  }
+
+  &.is-active {
+    &::before {
+      background-color: $primaryColor;
+    }
+
+    &::after {
+      width: 15px;
+      height: 15px;
+      background-color: transparent;
+      border: 2px solid $primaryColor;
+    }
+  }
+}

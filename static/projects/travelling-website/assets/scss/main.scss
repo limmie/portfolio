@@ -1,0 +1,47 @@
+/* CONFIG */
+@import "./config/variables";
+@import "./config/mixins";
+@import "./config/fonts";
+
+/* BASE */
+@import "./base/forms";
+
+/* COMPONENTS */
+@import "./components/header";
+@import "./components/footer";
+
+/* SECTIONS */
+@import "./sections/landing";
+@import "./sections/destinations";
+@import "./sections/offer";
+@import "./sections/choose-destination";
+@import "./sections/customers";
+@import "./sections/banner";
+
+/* PAGES */
+@import "./pages/home";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: NotoSerif, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: $blackTextColor;
+}
+
+.container {
+  @include container(1680px);
+}
+
+a {
+  text-decoration: none;
+  color: $blackTextColor;
+}
+
+.is-highlighted-text {
+  color: $primaryColor;
+}

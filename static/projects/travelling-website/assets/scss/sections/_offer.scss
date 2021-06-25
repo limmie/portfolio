@@ -1,0 +1,95 @@
+#offer {
+  padding-left: 150px;
+  position: relative;
+}
+
+#offer {
+  @include grid(570px 1fr, auto, 10rem);
+}
+
+#offer-image {
+  position: relative;
+  z-index: 1;
+  height: 700px;
+  img {
+    @include fitImage(center, cover);
+    border-radius: 10px;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 5rem;
+    top: 5rem;
+    width: 216px;
+    height: 535px;
+    z-index: -1;
+    background: #ffcbc4;
+    filter: blur(150px);
+  }
+}
+
+.offer-particle {
+  position: absolute;
+  z-index: -1;
+}
+
+#rectangle-particle {
+  right: -4rem;
+  top: -3rem;
+}
+
+#ellipse-particle {
+  left: -8rem;
+  top: 20rem;
+}
+
+#ellipses-particle {
+  bottom: -5rem;
+  left: -5rem;
+}
+
+#offer-description {
+  h1 {
+    font-size: 48px;
+    margin-bottom: 4rem;
+  }
+}
+
+.offer-description-accordion-item {
+  @include grid(1fr 10fr, auto, 1rem);
+  cursor: pointer;
+  margin-bottom: 2rem;
+
+  &:last-child {
+    .offer-description-accordion-item-description {
+      border-bottom: 0;
+    }
+  }
+}
+
+.offer-description-accordion-item-icon {
+  width: 50px;
+  height: 50px;
+  @include flex(row, center, center);
+  border-radius: 10px;
+  background-color: $grayColor;
+}
+
+.offer-description-accordion-item-description {
+  border-bottom: 1px solid $grayColor;
+  padding-bottom: 30px;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+
+  p {
+    @include OpenSans;
+    color: $grayTextColor;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-in-out;
+  }
+}

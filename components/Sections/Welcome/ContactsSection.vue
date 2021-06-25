@@ -23,13 +23,29 @@
           <a href="tel:+99362928043">+993 62 92 80 43</a>
         </div>
       </div>
-      <form id="contacts-form">
-        <input type="text" :placeholder="$t('name')" />
-        <input type="text" :placeholder="$t('email')" />
-        <input type="text" :placeholder="$t('subject')" />
-        <textarea :placeholder="$t('message')"></textarea>
-        <button>{{ $t("sendMessage") }}</button>
-      </form>
+      <!-- THIS SECTION WILL BE OPENED AFTER I GET A SERVER FOR RECIEVING LETTERS -->
+      <!--      <form id="contacts-form">-->
+      <!--        <input-->
+      <!--          type="text"-->
+      <!--          :placeholder="$t('name')"-->
+      <!--          v-model="letter.senderName"-->
+      <!--        />-->
+      <!--        <input-->
+      <!--          type="text"-->
+      <!--          :placeholder="$t('email')"-->
+      <!--          v-model="letter.senderEmail"-->
+      <!--        />-->
+      <!--        <input-->
+      <!--          type="text"-->
+      <!--          :placeholder="$t('subject')"-->
+      <!--          v-model="letter.subject"-->
+      <!--        />-->
+      <!--        <textarea-->
+      <!--          :placeholder="$t('message')"-->
+      <!--          v-model="letter.message"-->
+      <!--        ></textarea>-->
+      <!--        <button>{{ $t("sendMessage") }}</button>-->
+      <!--      </form>-->
     </div>
   </section>
 </template>
@@ -39,6 +55,17 @@ import SectionTitle from "../../Titles/SectionTitle";
 export default {
   components: {
     SectionTitle,
+  },
+
+  data() {
+    return {
+      letter: {
+        senderName: "",
+        senderEmail: "",
+        subject: "",
+        message: "",
+      },
+    };
   },
 };
 </script>

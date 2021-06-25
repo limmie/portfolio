@@ -1,0 +1,190 @@
+.landing-slide {
+  position: relative;
+  height: 650px;
+  @include flex(column, center, flex-start);
+  padding: 10rem;
+}
+
+#landing-slider-slides {
+  opacity: 1;
+  @include defaultTransition;
+  &.is-hide {
+    @include defaultTransition;
+    opacity: 0;
+  }
+}
+
+.landing-slide-image {
+  @include fitAbsolute;
+  z-index: -1;
+  height: 100%;
+  img {
+    @include fitImage(center, cover);
+  }
+}
+
+.landing-slide-title {
+  font-size: 84px;
+  line-height: 102px;
+  margin-bottom: 3rem;
+  text-transform: capitalize;
+}
+
+.landing-slide-button {
+  padding: 1rem 3rem;
+}
+
+#landing-slider-footer {
+  @include grid(4fr 10fr, auto, 2rem);
+}
+
+#landing-slider-nav {
+  @include flex(row, space-between, center);
+  gap: 2rem;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+#landing-slider-nav-line {
+  height: 2px;
+  width: 100%;
+  background-color: $grayColor;
+}
+
+#landing-slider-nav-buttons {
+  @include flex(row, flex-start, center);
+  gap: 1rem;
+}
+
+.landing-slider-nav-button {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0.7;
+  @include defaultTransition;
+  @include flex(row, center, center);
+
+  &:hover {
+    opacity: 1;
+    @include defaultTransition;
+  }
+}
+
+#landing-slider-nav-buttons-prev {
+  background-color: $primaryColor;
+}
+
+#landing-slider-nav-buttons-next {
+  border: 2px solid $grayColor;
+}
+
+#landing-slider-form {
+  @include grid(16fr 2fr, auto, 2rem);
+  align-items: center;
+  background-color: $whiteColor;
+  box-shadow: 0px 10px 30px 5px rgba(219, 200, 197, 0.4);
+  position: relative;
+  bottom: 5rem;
+  left: 1px;
+  padding: 2rem;
+}
+
+.landing-slider-form-input {
+  @include flex(column, flex-start, unset);
+  position: relative;
+  border-bottom: 1px solid $grayColor;
+  padding: 0.6rem;
+
+  label {
+    font-size: 16px;
+    @include OpenSans;
+    color: $grayTextColor;
+  }
+
+  input,
+  select,
+  textarea {
+    @include removeDefault;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: "";
+    padding-top: 1rem;
+    width: 100%;
+
+    color: $primaryColor;
+    font-size: 18px;
+    font-family: NotoSerif, Arial, Helvetica, sans-serif;
+  }
+
+  input[type="date"]::-webkit-inner-spin-button,
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    -webkit-appearance: none;
+    opacity: 0;
+    z-index: 2;
+  }
+
+  .default-icon {
+    position: absolute;
+    right: 01rem;
+    top: 3rem;
+  }
+}
+
+#landing-slider-form-inputs {
+  @include grid(repeat(3, 1fr), auto, 1rem);
+}
+
+#landing-slider-form-check-in-input-icon {
+  right: 1.2rem;
+  z-index: 1;
+}
+
+#landing-slider-form-price-range-inputs {
+  @include flex(row, center, center);
+  gap: 1rem;
+
+  p {
+    padding-top: 1rem;
+    color: $primaryColor;
+  }
+}
+
+#landing-cards {
+  @include grid(repeat(4, 1fr), auto, 3rem);
+}
+
+.landing-card {
+  background-color: $skyColor;
+  padding: 3rem;
+  @include flex(column, flex-start, center);
+  text-align: center;
+  cursor: pointer;
+  @include defaultTransition;
+
+  &:hover {
+    @include defaultTransition;
+    filter: drop-shadow(0px 12px 30px rgba(200, 180, 180, 0.2));
+    background-color: #fff;
+  }
+}
+
+.landing-card-image {
+  width: 100px;
+  height: 100px;
+  img {
+    @include fitImage(center, contain);
+  }
+}
+
+.landing-card-description {
+  h2 {
+    font-size: 24px;
+    margin: 1rem 0;
+  }
+  p {
+    font-size: 18px;
+    @include OpenSans;
+    color: $grayTextColor;
+  }
+}

@@ -11,26 +11,28 @@
 
       <div id="work-blocks">
         <div class="work-block" v-for="(work, index) in works" :key="index">
-          <div class="work-block-image">
-            <img :src="work.image" alt="" />
-          </div>
-          <div class="work-block-hover-info">
-            <div class="work-block-hover-info-title">
-              <h3>{{ work.name }}</h3>
-              <span v-for="(type, index) in work.types" :key="index">
-                {{ type }}
-              </span>
+          <a :href="work.link" target="_blank">
+            <div class="work-block-image">
+              <img :src="work.image" alt="" />
             </div>
-            <div class="work-block-hover-info-stats">
-              <div class="work-block-hover-info-stat">
-                <fa-icon :icon="['fas', 'share-alt']" />
+            <div class="work-block-hover-info">
+              <div class="work-block-hover-info-title">
+                <h3>{{ work.name }}</h3>
+                <span v-for="(type, index) in work.types" :key="index">
+                  {{ type }}
+                </span>
               </div>
-              <div class="work-block-hover-info-stat">
-                <fa-icon :icon="['fas', 'eye']" />
-                {{ work.views }}
+              <div class="work-block-hover-info-stats">
+                <div class="work-block-hover-info-stat">
+                  <fa-icon :icon="['fas', 'share-alt']" />
+                </div>
+                <div class="work-block-hover-info-stat">
+                  <fa-icon :icon="['fas', 'eye']" />
+                  {{ work.views }}
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
 

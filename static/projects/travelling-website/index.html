@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traveling</title>
+  <link rel="stylesheet" href="./assets/scss/main.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="header">
+        <div id="header-logo">
+          <img src="./static/images/logos/default-logo.svg" alt="" />
+        </div>
+
+        <div id="header-nav">
+          <div class="header-nav-item"><a href="#">Destination</a></div>
+          <div class="header-nav-item"><a href="#">Offer</a></div>
+          <div class="header-nav-item"><a href="#">Tour</a></div>
+          <div class="header-nav-item"><a href="#">Blog</a></div>
+        </div>
+
+        <div id="header-panel">
+          <div id="header-account">
+            <div class="default-icon">
+              <img src="./static/icons/user.svg" alt="" />
+            </div>
+            <p>My account</p>
+          </div>
+
+          <div id="header-search">
+            <div class="default-icon">
+              <img src="./static/icons/search.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="landing-section">
+      <div class="container">
+        <div id="landing-slider">
+          <div id="landing-slider-slides">
+          </div>
+
+          <div id="landing-slider-footer">
+            <div id="landing-slider-nav">
+              <div id="landing-slider-nav-buttons">
+                <div id="landing-slider-nav-buttons-prev" class="landing-slider-nav-button">
+                  <div class="default-icon">
+                    <img src="./static/icons/arrow-left.svg" alt="" />
+                  </div>
+                </div>
+
+                <div id="landing-slider-nav-buttons-next" class="landing-slider-nav-button">
+                  <div class="default-icon">
+                    <img src="./static/icons/arrow-right.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <div id="landing-slider-nav-line"></div>
+
+              <div id="landing-slider-nav-page-number">
+                <span class="is-highlighted-text">03</span>
+              </div>
+            </div>
+
+            <form id="landing-slider-form">
+              <div id="landing-slider-form-inputs">
+                <div class="landing-slider-form-input">
+                  <label for="destinations">Destinations</label>
+                  <select name="destinations" id="destinations">
+                    <option value="turkmenistan">Turkmenistan</option>
+                  </select>
+                  <div class="default-icon">
+                    <img src="./static/icons/arrow-down.svg" alt="" />
+                  </div>
+                </div>
+
+                <div class="landing-slider-form-input">
+                  <label for="check-in">Check in</label>
+                  <input type="date" id="check-in" />
+                  <div class="default-icon" id="landing-slider-form-check-in-input-icon">
+                    <img src="./static/icons/calendar-check.svg" alt="">
+                  </div>
+                </div>
+
+                <div class="landing-slider-form-input" id="landing-slider-form-price-range">
+                  <label>Price range</label>
+                  <div id="landing-slider-form-price-range-inputs">
+                    <input type="number" id="range-1" value="100" />
+                    <p>-</p>
+                    <input type="number" id="range-2" value="500" />
+                  </div>
+                  <div class="default-icon">
+                    <img src="./static/icons/dollar-sign.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+
+
+              <button class="default-button" id="landing-slider-form-button">
+                <span>Discover now</span>
+              </button>
+          </div>
+        </div>
+
+        <div id="landing-cards" class="home-section">
+          <div class="landing-card">
+            <div class="landing-card-image">
+              <img src="./static/images/landing/cards/card-1.jpg" alt="">
+            </div>
+            <div class="landing-card-description">
+              <h2>Choose destination</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio consequuntur nemo iure. Delectus
+                nulla, assumenda laborum repellendus ad nihil molestiae!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations-section" class="home-section">
+      <div class="container">
+        <div id="destinations">
+          <div id="destinations-description">
+            <h1>Top <span class="is-highlighted-text">Destinations</span> In The World</h1>
+            <p>It is a long established fact that a reader will be the distracted by the readable content of a page when
+              looking at its layout from it.</p>
+            <div class="default-button" id="destinations-button">Discover More</div>
+          </div>
+          <div id="destinations-city-cards">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="offer-section" class="home-section">
+      <div class="container">
+        <div id="offer">
+
+
+          <div id="offer-image">
+            <img src="./static/images/offer/offer-image.jpg" alt="">
+
+            <div class="offer-particle" id="rectangle-particle">
+              <img src="./static/images/offer/particles/rectangle.svg" alt="">
+            </div>
+
+            <div class="offer-particle" id="ellipse-particle">
+              <img src="./static/images/offer/particles/ellipse.svg" alt="">
+            </div>
+
+            <div class="offer-particle" id="ellipses-particle">
+              <img src="./static/images/offer/particles/ellipses.svg" alt="">
+            </div>
+          </div>
+
+          <div id="offer-description">
+            <h1 class="offer-title">We Offering In Total <span class="is-highlighted-text">793</span><br> Tours Out The
+              World</h1>
+
+            <div id="offer-description-accordion">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="choose-destination-section" class="home-section">
+      <div class="container">
+        <h1 id="choose-destination-title">Choose Your Destination</h1>
+
+        <div id="choose-destination-places">
+        </div>
+
+        <div id="choose-destination-buttons">
+          <div class="default-button">View All Places
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="customers-section" class="home-section">
+      <div id="customers-particles">
+      </div>
+
+      <div class="container">
+        <h1 id="customers-title">What Our Happy Customers
+          Say About Us</h1>
+
+        <div id="customers-slider">
+          <div id="customers-slider-slides">
+            <div class="customers-slider-slide">
+              <div class="customer">
+                <div class="customer-image">
+                  <img src="./static/images/customers/customer-1.jpg" alt="">
+                </div>
+                <div class="customer-info">
+                  <h1>Hello Worldow</h1>
+                  <p>UI/UX DESINGERs</p>
+                </div>
+              </div>
+
+              <div class="customer-message">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum culpa labore, expedita sed similique
+                  voluptatem commodi inventore alias dolor? Veritatis, animi quisquam fugit aliquid dolor praesentium ab
+                  sequi minima tempore.</p>
+              </div>
+            </div>
+          </div>
+          <div id="customers-slider-pagination">
+            <div class="customers-slider-pagination-item"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="banner-section" class="home-section">
+      <div class="container">
+        <div id="banner">
+          <div id="banner-content">
+            <h1 id="banner-title">Download Now Travel Community Apps</h1>
+            <div id="banner-download-buttons">
+              <div class="banner-download-button">
+                <img src="./static/images/banner/download/google-play-badge.png" alt="">
+              </div>
+              <div class="banner-download-button">
+                <img src="./static/images/banner/download/appstore-badge.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div id="banner-image">
+            <img src="./static/images/banner/banner-image.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div id="footer">
+          <div id="footer-info">
+            <div id="footer-logo">
+              <img src="./static/images/logos/default-logo.svg" alt="">
+            </div>
+
+            <p id="footer-info-text">You can dream, create, design, and buildsa the most wonderful place.</p>
+
+            <div id="footer-info-contacts">
+              <div class="footer-info-contact-item">
+                <div class="default-icon">
+                  <img src="./static/icons/phone.svg" alt="">
+                </div>
+                <span>+993 62 92 80 43</span>
+              </div>
+              <div class="footer-info-contact-item">
+                <div class="default-icon">
+                  <img src="./static/icons/letter.svg" alt="">
+                </div>
+                <span>selimdev00@gmail.com</span>
+              </div>
+              <div class="footer-info-contact-item">
+                <div class="default-icon">
+                  <img src="./static/icons/location.svg" alt="">
+                </div>
+                <span>selim.netlify.app</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="footer-nav">
+            <div class="footer-nav-section">
+              <h2>Quick Links</h2>
+              <div class="footer-nav-section-list">
+                <div class="footer-nav-section-list-item">
+                  <span>About us</span>
+                </div>
+                <div class="footer-nav-section-list-item">
+                  <span>Destinations</span>
+                </div>
+                <div class="footer-nav-section-list-item">
+                  <span>Latest blog</span>
+                </div>
+                <div class="footer-nav-section-list-item">
+                  <span>Our team</span>
+                </div>
+                <div class="footer-nav-section-list-item">
+                  <span>Contact us</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-nav-section">
+              <h2>Support</h2>
+              <div class="footer-nav-section-list">
+                <div class="footer-nav-section-list-item">
+                  <span>Customer support</span>
+                </div>
+                <div class="footer-nav-section-list-item">
+                  <span>Privacy & Policy</span>
+                </div>
+                <div class="footer-nav-section-list-item">
+                  <span>Terms & Condition</span>
+                </div>
+                <div class="footer-nav-section-list-item">
+                  <span>Forum</span>
+                </div>
+                <div class="footer-nav-section-list-item">
+                  <span>Tour Guide</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="footer-newsletter">
+            <h2>Newsletter</h2>
+
+            <div id="footer-newsletter-form">
+              <input type="text">
+
+              <div class="default-button">Subscribe now</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="footer-developers">
+          <p>
+            Copyright @2020 Ravel. Designed By <span class="is-highlighted-text">Md Shamim Hossainw</span>. Code by
+            <span class="is-highlighted-text">Selim Ataballyev</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./js/sections/landing.js"></script>
+  <script src="./js/sections/destinations.js"></script>
+  <script src="./js/sections/offer.js"></script>
+  <script src="./js/sections/choose-destination.js"></script>
+  <script src="./js/sections/customers.js"></script>
+</body>
+
+</html>

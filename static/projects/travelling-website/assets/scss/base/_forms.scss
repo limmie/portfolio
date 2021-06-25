@@ -1,0 +1,16 @@
+.default-button {
+  @include removeDefault;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.7;
+  color: $whiteColor;
+  background-color: $primaryColor;
+  text-align: center;
+  @include defaultPadding;
+  @include defaultTransition;
+
+  &:hover {
+    opacity: 1;
+    @include defaultTransition;
+  }
+}
