@@ -19,7 +19,15 @@
 </template>
 
 <script>
+import Hamburger from "../components/Hamburger";
+import Sidebar from "../components/Sidebar";
+
 export default {
+  components: {
+    Hamburger,
+    Sidebar,
+  },
+
   data() {
     return {
       sidebarActive: false,

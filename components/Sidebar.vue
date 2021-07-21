@@ -6,7 +6,7 @@
           <img src="/images/avatars/sidebar/sidebar-avatar.webp" alt="" />
         </div>
         <div id="sidebar-freelancer-info">
-          <h1>{{ this.$t("fullName") }}</h1>
+          <h1>{{ $t("fullName") }}</h1>
           <p v-html="$t('sidebar.freelancerInfo')"></p>
         </div>
       </div>
@@ -16,20 +16,18 @@
           {{ item.name }}
         </a>
 
-        <nuxt-link
-          id="sidebar-nav-language-selector"
-          :to="switchLocalePath(nextLanguageCode)"
-        >
-          {{ $t("currentLanguage") }}
-          <img
-            :src="`/images/countries/${$t('currentLanguageIconName')}`"
-            alt=""
-          />
-        </nuxt-link>
+        <div id="sidebar-nav-language-selector" @click="changeLanguage">
+          <a
+            >{{ $t("currentLanguage") }}
+            <img
+              :src="`/images/countries/${$t('currentLanguageIconName')}`"
+              alt=""
+          /></a>
+        </div>
       </nav>
       <footer id="sidebar-footer">
-        <p v-html="this.$t('footer.rightsReserved')"></p>
-        <p v-html="this.$t('footer.designIsMadeBy')"></p>
+        <p v-html="$t('footer.rightsReserved')"></p>
+        <p v-html="$t('footer.designIsMadeBy')"></p>
       </footer>
     </div>
   </aside>
@@ -56,9 +54,12 @@ export default {
         { name: "English", code: "en" },
       ];
     },
+  },
 
-    nextLanguageCode() {
-      return this.$i18n.locale === "en" ? "ru" : "en";
+  methods: {
+    changeLanguage() {
+      const code = this.$i18n.locale === "en" ? "ru" : "en";
+      this.$i18n.setLocale(code);
     },
   },
 };

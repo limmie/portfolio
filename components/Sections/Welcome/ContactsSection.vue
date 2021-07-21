@@ -8,7 +8,7 @@
           <div class="contacts-info-icon">
             <fa-icon :icon="['fas', 'at']" />
           </div>
-          <a href="#">selimdev00@gmail.com</a>
+          <a href="mailto:selimdev00@gmail.com">selimdev00@gmail.com</a>
         </div>
         <div class="contacts-info-item" id="contacts-info-location">
           <div class="contacts-info-icon">

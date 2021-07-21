@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>duhoot - travel around the world</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="header">
+				<a href="#">
+					<div class="header__logo">
+						<img src="img/logo.png" alt="">
+					</div>
+				</a>
+				
+				<nav>
+					<a class="hamburger">
+						<span></span>
+					</a>
+					<div class="header__nav">
+						<ul>
+							<li><a href="#">Reality</a></li>
+							<li><a href="#">Living</a></li>
+							<li><a href="#">Education</a></li>
+							<li><a href="#">Entertainment</a></li>
+							<li><a href="#">Mobility</a></li>
+						</ul>
+					</div>
+
+					<div class="header__search">
+						<img src="img/search.png" alt="">
+					</div>
+
+					<div class="header__login">
+						<img src="img/login.png" alt="">
+						<span>LOGIN</span>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section id="section_1">
+			<div class="container">
+				<div class="search">
+					<h1>What are you looking for?</h1>
+					<form action="">
+						<div class="search__select">
+							<select name="" id="">
+								<option value="Dubai">Dubai</option>
+								<option value="New York">New York</option>
+							</select>
+							<select name="" id="">
+								<option value="Education">Education</option>
+								<option value="Travelling">Travelling</option>
+							</select>
+						</div>
+						<input type="text" placeholder="Keyword, name, date...">
+						<button type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<section id="section_2">
+			<div class="container">
+				<div class="filters">
+					<div class="filters__1">
+						<ul>
+							<li class="filter__1">Recommended</li>
+							<li class="filter__1">Latest</li>
+							<li class="filter__1">Hightlights</li>
+						</ul>
+					</div>
+
+					<div class="filters__2">
+						<select name="" id="">
+							<option value="Dubai">Dubai</option>
+							<option value="New York">New York</option>
+						</select>
+						<div class="filters__map off">
+							<span id="show__hide">Show Map</span>
+							<img src="img/map.png" alt="">
+						</div>
+					</div>
+
+					<div class="filters__3">
+						<span>Filter: </span>
+						<div class="filter__home off"><img src="img/home.png" alt=""></div>
+						<div class="filter__people off"><img src="img/people.png" alt=""></div>
+						<div class="filter__education off"><img src="img/education.png" alt=""></div>
+						<div class="filter__music off"><img src="img/music.png" alt=""></div>
+						<div class="filter__transport off"><img src="img/transport.png" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="section_3">
+			<div class="container">
+				<div class="services">
+					<div class="services__item item-1">
+						<div class="item__bg">
+							<div class="item__price">$ 2,990</div>
+							<span class="item__show">Show More</span>
+						</div>
+						<div class="item__description">
+							<div class="item__filter">
+								<img src="img/home.png" alt="">
+							</div>
+							<p class="item__about">2 bedroom house for rent in Dubai</p>
+							<p class="item__from">Vision Agency</p>
+							<div class="item__rating">
+								<span class="active">★</span>	
+								<span class="active">★</span>    
+								<span class="active">★</span>  
+								<span class="active">★</span>    
+								<span>★</span>
+								<span style="font-size: 12px;">(367)</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="services__item item-2">
+						<div class="item__bg">
+							<span class="item__show">Show More</span>
+						</div>
+						<div class="item__description">
+							<div class="item__filter">
+								<img src="img/music.png" alt="">
+							</div>
+							<p class="item__about">Beach festival party 2020</p>
+							<p class="item__from">Long Beach</p>
+							<div class="item__rating">
+								<span class="active">★</span>	
+								<span class="active">★</span>    
+								<span class="active">★</span>  
+								<span>★</span>    
+								<span>★</span>
+								<span style="font-size: 12px;">(211)</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="services__item item-3">
+						<div class="item__bg">
+							<span class="item__show">Show More</span>
+						</div>
+						<div class="item__description">
+							<div class="item__filter">
+								<img src="img/home.png" alt="">
+							</div>
+							<p class="item__about">Bus tour around Europe 2020</p>
+							<p class="item__from">Bus Agency</p>
+							<div class="item__rating">
+								<span class="active">★</span>	
+								<span class="active">★</span>    
+								<span class="active">★</span>  
+								<span>★</span>    
+								<span>★</span>
+								<span style="font-size: 12px;">(123)</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="services__item item-4">
+						<div class="item__bg">
+							<div class="item__price">$ 4,990</div>
+							<span class="item__show">Show More</span>
+						</div>
+						<div class="item__description">
+							<div class="item__filter">
+								<img src="img/home.png" alt="">
+							</div>
+							<p class="item__about">4 bedroom house for rent in London</p>
+							<p class="item__from">Vision Agency</p>
+							<div class="item__rating">
+								<span class="active">★</span>	
+								<span class="active">★</span>    
+								<span class="active">★</span>  
+								<span class="active">★</span>    
+								<span class="active">★</span>
+								<span style="font-size: 12px;">(667)</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="services__item item-5">
+						<div class="item__bg">
+							<span class="item__from">Vision Agency</span>
+							<div class="item__rating">
+								<span class="active">★</span>	
+								<span class="active">★</span>    
+								<span class="active">★</span>  
+								<span class="active">★</span>    
+								<span class="active">★</span>
+								<span style="font-size: 12px;">(1027)</span>
+							</div>
+						</div>
+						<div class="item__description">
+							<div class="item__filter">
+								<img src="img/home.png" alt="">
+							</div>
+							<div class="item__rating">
+								<span class="active">★</span>	
+								<span class="active">★</span>    
+								<span class="active">★</span>  
+								<span class="active">★</span>    
+								<span>★</span>
+							</div>
+							<div class="item__review">
+								<img src="img/review-img.png" alt="">
+								<div class="review__description">
+									<h1>Lucy-P</h1>
+									<p>“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” ...read more</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="services__item item-6">
+						<div class="item__bg">
+							<span class="item__from">Skybox Club</span>
+							<div class="item__rating">
+								<span class="active">★</span>	
+								<span class="active">★</span>    
+								<span class="active">★</span>  
+								<span class="active">★</span>    
+								<span class="active">★</span>
+								<span style="font-size: 12px;">(211)</span>
+							</div>
+						</div>
+						<div class="item__description">
+							<div class="item__filter">
+								<img src="img/home.png" alt="">
+							</div>
+							<div class="item__rating">
+								<span class="active">★</span>	
+								<span class="active">★</span>    
+								<span class="active">★</span>  
+								<span class="active">★</span>    
+								<span class="active">★</span>
+							</div>
+							<div class="item__review">
+								<img src="img/review-img-2.png" alt="">
+								<div class="review__description">
+									<h1>peter145</h1>
+									<p>“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” <a href="#"><b>...read more</b></a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="services__item item-1 item-7">
+						<div class="item__bg">
+							<div class="item__price">$ 2,990</div>
+							<span class="item__show">Show More</span>
+						</div>
+						<div class="item__description">
+							<div class="item__filter">
+								<img src="img/home.png" alt="">
+							</div>
+							<p class="item__about">2 bedroom house for rent in Dubai</p>
+							<p class="item__from">Vision Agency</p>
+							<div class="item__rating">
+								<span class="active">★</span>	
+								<span class="active">★</span>    
+								<span class="active">★</span>  
+								<span class="active">★</span>    
+								<span>★</span>
+								<span style="font-size: 12px;">(367)</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="services__item item-2 item-8">
+						<div class="item__bg">
+							<span class="item__show">Show More</span>
+						</div>
+						<div class="item__description">
+							<div class="item__filter">
+								<img src="img/music.png" alt="">
+							</div>
+							<p class="item__about">Beach festival party 2020</p>
+							<p class="item__from">Long Beach</p>
+							<div class="item__rating">
+								<span class="active">★</span>	
+								<span class="active">★</span>    
+								<span class="active">★</span>  
+								<span>★</span>    
+								<span>★</span>
+								<span style="font-size: 12px;">(211)</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="services__item item-3 item-9">
+						<div class="item__bg">
+							<span class="item__show">Show More</span>
+						</div>
+						<div class="item__description">
+							<div class="item__filter">
+								<img src="img/home.png" alt="">
+							</div>
+							<p class="item__about">Bus tour around Europe 2020</p>
+							<p class="item__from">Bus Agency</p>
+							<div class="item__rating">
+								<span class="active">★</span>	
+								<span class="active">★</span>    
+								<span class="active">★</span>  
+								<span>★</span>    
+								<span>★</span>
+								<span style="font-size: 12px;">(123)</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="services__item item-4 item-10">
+						<div class="item__bg">
+							<div class="item__price">$ 4,990</div>
+							<span class="item__show">Show More</span>
+						</div>
+						<div class="item__description">
+							<div class="item__filter">
+								<img src="img/home.png" alt="">
+							</div>
+							<p class="item__about">4 bedroom house for rent in London</p>
+							<p class="item__from">Vision Agency</p>
+							<div class="item__rating">
+								<span class="active">★</span>	
+								<span class="active">★</span>    
+								<span class="active">★</span>  
+								<span class="active">★</span>    
+								<span class="active">★</span>
+								<span style="font-size: 12px;">(667)</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="services__item item-5 item-11">
+						<div class="item__bg">
+							<span class="item__from">Vision Agency</span>
+							<div class="item__rating">
+								<span class="active">★</span>	
+								<span class="active">★</span>    
+								<span class="active">★</span>  
+								<span class="active">★</span>    
+								<span class="active">★</span>
+								<span style="font-size: 12px;">(1027)</span>
+							</div>
+						</div>
+						<div class="item__description">
+							<div class="item__filter">
+								<img src="img/home.png" alt="">
+							</div>
+							<div class="item__rating">
+								<span class="active">★</span>	
+								<span class="active">★</span>    
+								<span class="active">★</span>  
+								<span class="active">★</span>    
+								<span>★</span>
+							</div>
+							<div class="item__review">
+								<img src="img/review-img.png" alt="">
+								<div class="review__description">
+									<h1>Lucy-P</h1>
+									<p>“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” ...read more</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+					<div class="services__item item-6 item-12">
+						<div class="item__bg">
+							<span class="item__from">Skybox Club</span>
+							<div class="item__rating">
+								<span class="active">★</span>	
+								<span class="active">★</span>    
+								<span class="active">★</span>  
+								<span class="active">★</span>    
+								<span class="active">★</span>
+								<span style="font-size: 12px;">(211)</span>
+							</div>
+						</div>
+						<div class="item__description">
+							<div class="item__filter">
+								<img src="img/home.png" alt="">
+							</div>
+							<div class="item__rating">
+								<span class="active">★</span>	
+								<span class="active">★</span>    
+								<span class="active">★</span>  
+								<span class="active">★</span>    
+								<span class="active">★</span>
+							</div>
+							<div class="item__review">
+								<img src="img/review-img-2.png" alt="">
+								<div class="review__description">
+									<h1>peter145</h1>
+									<p>“Aliquam quis pulvinar purus. Etiam cursus ipsum quis enim faucibus, quis posuere orci ornare. Duis mattis sagittis fringilla.” <a href="#"><b>...read more</b></a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" style="color: #566375;">
+					<p style="text-align: center; margin: 30px 0 0 0; font-weight: 700;">Load More -></p>
+				</a>
+				<hr style="margin: 20px 0;">
+			</div>
+		</section>
+
+		<section id="section_4">
+			<div class="container">
+				<h1>What can DuHoot offer to you</h1>
+				<p>Etiam cursus ipsum quis enim faucibus</p>
+
+				<div class="offers">
+					<div class="offers__home offer">
+						<img src="img/home-offer-on.png" alt="">
+					</div>
+					
+					<div class="line line-1"></div>
+
+					<div class="offers__people offer">
+						<img src="img/people-offer.png" alt="">
+					</div>
+
+					<div class="line line-2"></div>
+
+					<div class="offers__education offer">
+						<img src="img/education-offer.png" alt="">
+					</div>
+
+					<div class="line line-3"></div>
+
+					<div class="offers__music offer">
+						<img src="img/music-offer.png" alt="">
+					</div>
+
+					<div class="line line-4"></div>
+
+					<div class="offers__transport offer">
+						<img src="img/transport-offer.png" alt="">
+					</div>
+				</div>
+
+				<h1 class="offers__heading">Home</h1>
+				<div class="offers__description">
+					<div class="description__1 description">
+						<img src="img/offer-description-1.png" alt="">
+						<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+					</div>
+					<div class="description__2 description">
+						<img src="img/offer-description-2.png" alt="">
+						<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi gravida tellus in purus pharetra, vel dignissim mauris viverra. Maecenas vitae risus est. In hendrerit, massa at.</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<footer>
+			<div class="container">
+				<h1>Subscribe to our newsletter</h1>
+				<div class="footer__subscribe">
+					<form action="">
+						<img src="img/mail.png" alt="" style="margin: 0 20px">
+						<input type="text" placeholder="your@email.com">
+						<button>Subscribe <img src="img/play.png" alt=""></button>
+					</form>
+				</div>
+				<div class="line"></div>
+
+				<div class="footer">
+					<div class="footer__nav">
+						<p>Ipsum quis</p>
+						<ul>
+							<li><a href="#">Aliquam quis</a></li>
+							<li><a href="#">Pulvinar purus</a></li>
+							<li><a href="#">Etiam cursus</a></li>
+							<li><a href="#">Ipsum quis</a></li>
+							<li><a href="#">Enim faucibus</a></li>
+						</ul>
+					</div>
+
+					<div class="footer__nav">
+						<p>Ipsum quis</p>
+						<ul>
+							<li><a href="#">Aliquam quis</a></li>
+							<li><a href="#">Pulvinar purus</a></li>
+							<li><a href="#">Etiam cursus</a></li>
+							<li><a href="#">Ipsum quis</a></li>
+							<li><a href="#">Enim faucibus</a></li>
+						</ul>
+					</div>
+
+					<div class="footer__links">
+						<p>Follow us</p>
+						<ul>
+							<li><img src="img/facebook.png" class="fb" alt=""></li>
+							<li><img src="img/twitter.png" class="tw" alt=""></li>
+							<li><img src="img/google.png" class="gl" alt=""></li>
+							<li><img src="img/youtube.png" class="yt" alt=""></li>
+						</ul>
+					</div>
+				</div>
+				<p style="text-align: right; color: #c0bebc; padding: 0 15px 0 0;">Copyright © All Rights reserved</p>
+			</div>
+		</footer>
+	</main>
+	
+
+
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
