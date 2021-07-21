@@ -21,6 +21,8 @@ export default {
     rightsReserved: `© Copyright |  All rights reserved |  ${new Date().getFullYear()}`,
     designIsMadeBy:
       "Design is made by <a href='https://colorlib.com' target='_blank'>Colorlib</a>",
+    codeBy:
+      "Code is written by <a href='https://github.com/limmie/portfolio' target='_blank'>Selim</a>",
   },
 
   sections: {

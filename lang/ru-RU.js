@@ -19,7 +19,9 @@ export default {
   footer: {
     rightsReserved: `© Авторские права | Все права защищены |  ${new Date().getFullYear()}`,
     designIsMadeBy:
-      "Дизайн сделан <a href='https://colorlib.com' target='_blank'>Colorlib</a>",
+      "Дизайн сделали <a href='https://colorlib.com' target='_blank'>Colorlib</a>",
+    codeBy:
+      "Код написал <a href='https://github.com/limmie/portfolio' target='_blank'>Selim</a>",
   },
 
   sections: {

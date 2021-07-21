@@ -26,8 +26,9 @@
         </div>
       </nav>
       <footer id="sidebar-footer">
-        <p v-html="$t('footer.rightsReserved')"></p>
         <p v-html="$t('footer.designIsMadeBy')"></p>
+        <p v-html="$t('footer.codeBy')"></p>
+        <p v-html="$t('footer.rightsReserved')"></p>
       </footer>
     </div>
   </aside>
